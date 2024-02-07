@@ -1,0 +1,168 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 260px;
+  background: #11101d;
+  padding: 15px;
+  z-index: 99;
+
+}
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.logo {
+  font-size: 25px;
+  padding-left: 30px;
+}
+
+/* Toggle Button CSS */
+.toggle-button {
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  z-index: 1001; /* Above everything else */
+  background-color: #4070f4; /* Example background color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 4px 6px; /* Padding inside the button */
+  cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
+  font-size: 14px; /* Font size */
+  transition: left 0.3s; /* Smooth transition for moving button */
+}
+
+
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+.menu-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 15px;
+  overflow-y: scroll;
+}
+.menu-content::-webkit-scrollbar {
+  display: none;
+}
+.menu-items {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+.menu-items li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 5px; /* Add space between list items */
+}
+
+.menu-items li a {
+  color: #fff;
+  text-decoration: none;
+  flex-grow: 1; /* Allows the link to take up available space */
+  margin-right: 10px; /* Space between link and delete button */
+}
+
+.menu-items li button {
+
+  color: white;
+  border: none;
+  border-radius: 50%; /* Circular button */
+  padding: 5px 5px; /* Adjust padding as needed */
+  font-size: 10px; /* Adjust font size as needed */
+  line-height: 1; /* To prevent extra height */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu-items li button:hover {
+  background-color: black; /* Slightly darker on hover */
+}
+
+.menu-title {
+  color: #fff;
+  font-size: 14px;
+}
+.item a {
+  padding: 16px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 12px;
+}
+.item i {
+  font-size: 12px;
+}
+.item a:hover{
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.navbar,
+.main {
+  left: 260px;
+  width: calc(100% - 260px);
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
+.sidebar.close ~ .navbar,
+.sidebar.close ~ .main {
+  left: 0;
+  width: 100%;
+}
+.navbar {
+  position: fixed;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 25px;
+  background: #4070f4;
+  cursor: pointer;
+
+}
+.navbar #sidebar-close {
+  cursor: pointer;
+}
+.main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: 100;
+  background: #e7f2fd;
+}
+
+
+#createButton {
+  background-color: #4070f4; /* Matching navbar color */
+  color: white;
+  padding: 7px 15px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 20px 15px;
+  transition: background-color 0.3s;
+}
+
+#createButton:hover {
+  background-color: #3050d4; /* Slightly darker on hover */
+}

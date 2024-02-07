@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bellobot | Information Retrival</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styleCh.css" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+
+  <button id="sidebar-toggle" class="toggle-button">☰</button>
+  <nav class="sidebar">
+
+    <a href="#" class="logo">Bellobot 🐥</a>
+
+    <div class="menu-content">
+      <div class="menu-title"><button id="createButton">New Chat 💭</button></div>
+      <ul class="menu-items">
+
+      </ul>
+    </div>
+  </nav>
+ 
+
+
+
+  <main class="main">
+
+
+    <!-- Chats container -->
+    <div class="chat-container"></div>
+
+    <!-- Typing container -->
+    <div class="typing-container">
+      <div class="typing-content">
+        <div class="typing-textarea">
+          <textarea id="chat-input" spellcheck="false" placeholder="Enter a prompt" required></textarea>
+          <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+        <div class="typing-controls">
+          <span id="theme-btn" class="material-symbols-rounded">light_mode</span>
+          <span id="delete-btn" class="material-symbols-rounded">delete</span>
+      </div>
+    </div>
+  </div>
+
+  </main>
+
+
+  <script src="scriptCh.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
